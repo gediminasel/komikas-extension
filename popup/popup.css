@@ -1,0 +1,107 @@
+/* https://github.com/biw/comic-sans-everything#readme
+   License: MIT
+*/
+
+* {
+  font-family: "Comic Sans Ms" !important;
+}
+
+body {
+  width: 240px;
+  height: 300px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+h1 {
+  font-size: 20px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: #Fff;
+  text-shadow: #000 0px 4px 20px;
+}
+h2 {
+  background: #0000FF;
+  border: 3px #Fff dotted;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #Fff;
+  font-size: 12px;
+}
+h2:hover {
+  animation: color-change 1s ease infinite;
+}
+button {
+  margin: 15px auto;
+  padding: 15px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #00FFFF;
+  display: block;
+  width: 210px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#case_switch {
+  background: #Ffeb00;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 auto 5px;
+}
+
+#color_switch {
+  background: magenta;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 auto 5px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(45deg, #Ff2400, #E81d1d, #E8b71d, #E3e81d, #1de840, #1ddde8, #2b1de8, #Dd00f3, #Dd00f3, #2b1de8, #1ddde8, #1de840, #E3e81d, #E8b71d, #E81d1d, #Ff2400);
+  background-size: 1800% 1800%;
+
+  animation: rainbow 3s linear infinite;
+}
+
+.emoji {
+  font-family: "Sans-Serif";
+}
+
+@keyframes color-change {
+  0% {
+    color: #Fff;
+    background: #0000FF;
+    border-color: #Fff;
+  }
+  50% {
+    color: #0000FF;
+    background: #Fff;
+    border-color: #0000FF;
+  }
+  100% {
+    color: #Fff;
+    background: #0000FF;
+    border-color: #Fff;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position:0% 100%
+  }
+  100% {
+    background-position:100% 0%
+  }
+}
